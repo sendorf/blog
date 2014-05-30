@@ -16,6 +16,12 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'execjs'
 gem 'rake'
 gem 'therubyracer'
+gem 'jquery-rails'
+gem 'database_cleaner', '~> 0.8.0'
+gem 'faker' #needed in staging for db:seed
+gem 'factory_girl' # needed in staging for db:seed
+gem 'activerecord-postgresql-adapter'
+gem 'simple_form'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
