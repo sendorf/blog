@@ -18,8 +18,8 @@ describe Post, :type => :model do
   	expect(post.title).to eq("Title")
 	end
   it "returns the body" do
-  	post = FactoryGirl.build_stubbed :post, :title => "Body"
-  	expect(post.title).to eq("Body")
+  	post = FactoryGirl.build_stubbed :post, :body => "Body"
+  	expect(post.body).to eq("Body")
 	end
   it "has creation date" do
     post = FactoryGirl.build_stubbed :post
