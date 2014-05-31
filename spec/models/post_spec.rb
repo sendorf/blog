@@ -21,4 +21,9 @@ describe Post, :type => :model do
   	post = FactoryGirl.build_stubbed :post, :title => "Body"
   	expect(post.title).to eq("Body")
 	end
+  it "has creation date" do
+    post = FactoryGirl.build_stubbed :post
+    expect(post.created_at).not_to be_nil
+  end
+  it "has many comments"
 end
