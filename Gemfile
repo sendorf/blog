@@ -18,6 +18,7 @@ gem 'rake'
 gem 'therubyracer'
 gem 'database_cleaner', '~> 0.8.0'
 gem 'faker' #needed in staging for db:seed
+gem 'factory_girl'
 gem 'factory_girl_rails' # needed in staging for db:seed
 gem 'activerecord-postgresql-adapter'
 gem 'simple_form'
@@ -39,6 +40,7 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'shoulda-matchers', require: false
 end
 
 # Use unicorn as the app server
