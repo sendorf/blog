@@ -7,9 +7,20 @@ describe Post, :type => :model do
   end
   it "is invalid without a title" do
    	post = FactoryGirl.build_stubbed :post
-   	post.title =nil
+   	post.title = nil
    	expect(post).not_to be_valid
   end
-  it "returns the title"
-  it "returns the body"
+  it "is invalid without a body" do
+   	post = FactoryGirl.build_stubbed :post
+   	post.body = nil
+   	expect(post).not_to be_valid
+  end
+  it "returns the title" do
+  	post = FactoryGirl.build_stubbed :post, :title => "Title"
+  	expect(post.title).to eq("Title")
+	end
+  it "returns the body" do
+  	post = FactoryGirl.build_stubbed :post, :title => "Body"
+  	expect(post.title).to eq("Body")
+	end
 end
