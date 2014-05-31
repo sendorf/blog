@@ -6,13 +6,11 @@ describe Post, :type => :model do
     expect(post).to be_valid
   end
   it "is invalid without a title" do
-   	post = FactoryGirl.build_stubbed :post
-   	post.title = nil
+   	post = FactoryGirl.build_stubbed :post, :title => nil
    	expect(post).not_to be_valid
   end
   it "is invalid without a body" do
-   	post = FactoryGirl.build_stubbed :post
-   	post.body = nil
+   	post = FactoryGirl.build_stubbed :post, :body => nil
    	expect(post).not_to be_valid
   end
   it "returns the title" do
