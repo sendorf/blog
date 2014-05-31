@@ -25,5 +25,8 @@ describe Post, :type => :model do
     post = FactoryGirl.build_stubbed :post
     expect(post.created_at).not_to be_nil
   end
-  it "has many comments"
+  it "has many comments" do
+    post = FactoryGirl.build_stubbed :post
+    expect(post).to have_many :comments
+  end
 end
