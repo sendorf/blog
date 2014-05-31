@@ -29,4 +29,5 @@ describe Comment, :type => :model do
     comment = FactoryGirl.build_stubbed :comment
     expect(comment).to belong_to :post
 	end
+	it "returns the post it belongs to"
 end
