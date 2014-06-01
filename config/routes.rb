@@ -55,6 +55,8 @@ Rails.application.routes.draw do
   #   end
   resources :posts, only: [:edit, :new, :show, :create, :update, :index]
 
-  root :to => 'posts#show'
+  resources :comments, only: [:create]
+
+  root :to => 'posts#index'
 
 end

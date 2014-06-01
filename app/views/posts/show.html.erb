@@ -1,0 +1,22 @@
+<div>
+	<h2 class="text-center "><%= @post.title %></h2>
+  <br>
+  <div class="col-md-offset-1">
+    <p class="span11 justify"><%= @post.body.gsub("\n", "<br />").html_safe %></p>
+  
+  <div class = "span11 justify" >
+    <div class="col-md-offset-1">
+      <% @comments.each do |comment|%>
+        <br>
+        <h4><%= comment.user %></h4>
+        <br>
+        <p><%= comment.body.gsub("\n", "<br />").html_safe %></p>
+      <% end %> 
+      </br>
+      <div>
+        <h3 class="text-center">Add Comment<h3>
+      </div>
+      <%= render 'comment_form' %>
+    </div>
+  </div>
+</div>

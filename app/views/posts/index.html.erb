@@ -1,0 +1,19 @@
+<div class="text-center">
+	<%= link_to "<i class='glyphicon glyphicon-plus white-icon'></i>
+              New Post".html_safe,
+              new_post_path,
+              :class => 'btn btn-success',
+              :type => 'button'
+  %>
+</div>
+<% @posts.each do |post| %>
+<div class = "span12 justify">
+	<div class ="buttons col-md-offset-1">
+    <h3><%= link_to post.title,
+              post_path(post)
+    %></h3>
+    <%= (post.body[0..100] + "...").html_safe %>
+  </div>
+</br>
+</div>
+<% end %>
