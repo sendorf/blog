@@ -18,9 +18,8 @@ gem 'rake'
 gem 'therubyracer'
 gem 'database_cleaner', '~> 0.8.0'
 gem 'faker' #needed in staging for db:seed
-gem 'factory_girl'
 gem 'factory_girl_rails' # needed in staging for db:seed
-gem 'activerecord-postgresql-adapter'
+gem 'pg'
 gem 'simple_form'
 
 # Use jquery as the JavaScript library
