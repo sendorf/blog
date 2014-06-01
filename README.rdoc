@@ -1,6 +1,6 @@
 == README
 = Blog
-This is a blog that has only two resources, Post and Comment. They Blog would be compossed by multiple post and each post may have many comments.
+This is a blog that has only two resources, Post and Comment. The Blog would be compossed by multiple post and each post may have many comments.
 
 A post has a title and a body and both of them are mandatory. A comment has a body and an author and also these both fields are mandatory
 
